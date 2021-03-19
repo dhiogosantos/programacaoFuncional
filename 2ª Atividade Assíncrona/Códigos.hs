@@ -54,7 +54,8 @@ precede (d, m, a) (d1, m1, a1) | (valida (d, m, a) == True) && (valida (d1, m1, 
 
 type Livro = (String, String, String, String, Int)
 type Aluno = (String, String, String, String)
-type Emprestimo = (String, String, Data, Data, String)
+type Emprestimo = (String, String, Data, Data, String)
+
 
 --EX 9
 
@@ -63,4 +64,4 @@ type Emprestimo = (String, String, Data, Data, String)
 --verifica (a,b,c) (codLivro, codAluno, (d, m, a), (d1, m1, a1), status) 
 --| (precede (valida ((de, me, ae), (dd, md, ad)))) == True) = "Emprestimo em dia."
 --| (precede (valida ((de, me, ae), (dd, md, ad)))) ==False) = "Emprestimo atrasado."
---| otherwise = False
+--| otherwise = "False"
