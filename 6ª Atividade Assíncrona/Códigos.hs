@@ -206,14 +206,14 @@ G)
 
 --EX 5
 
-letraA = (\x -> \y -> y)((\z -> z)(\z -> z))(\w -> w) 5
+letra_A = (\x -> \y -> y)((\z -> z)(\z -> z))(\w -> w) 5
 
-letraB = ((\f -> (\x -> f(f x))) (\y -> y * y)) 3
+letra_B = ((\f -> (\x -> f(f x))) (\y -> y * y)) 3
 
-letraC = ((\f -> (\x -> f(f x))) (\y -> (+) y y)) 5
+letra_C = ((\f -> (\x -> f(f x))) (\y -> (+) y y)) 5
 
-letraD = ((\x -> (\y -> (+) x y) 5) ((\y -> (-) y 3) 7))
+letra_D = ((\x -> (\y -> (+) x y) 5) ((\y -> (-) y 3) 7))
 
-letraE = (((\f -> (\x -> f(f(f x)))) (\y -> (y * y))) 2)
+letra_E = (((\f -> (\x -> f(f(f x)))) (\y -> (y * y))) 2)
 
-letraF = (\x -> \y -> (+) x ((\x -> (-) x 3) y)) 5 6
+letra_F = (\x -> \y -> (+) x ((\x -> (-) x 3) y)) 5 6
