@@ -2,10 +2,10 @@
 
 analisa_raizes :: Float -> Float -> Float -> String
 analisa_raizes a b c
- | a ==  0  =  " 4) Equacao degenerada "
  | b ^  2  >  4  * a * c = " 1) Possui duas raizes reais "
  | b ^  2  ==  4  * a * c = " 2) Possui uma raiz real "
  | b ^  2  <  4  * a * c = " 3) Nenhuma raiz real "
+ | a ==  0  =  " 4) Equacao degenerada "
 
 --EX 2 
 
@@ -155,7 +155,8 @@ pessoas = [( " Rosa " , 1,66 , 27 , 'C'),
   ( " Bob " , 1,45 , 21 , 'C'),
   ( " Rosana " , 1,58 , 39 , 'S'),
   ( " Daniel " , 1,74 , 72 , 'S'),
-  ( " Jocileide " , 1,69 , 18 , 'S')]
+  ( " Jocileide " , 1,69 , 18 , 'S')]
+
 
 altura_media_aux  :: [ Pessoa ] ->  Float ->  Float ->  Float
 altura_media_aux ((_, alturaPessoa, _, _) : xs) soma tamanho = altura_media_aux xs (soma + alturaPessoa) (tamanho +  1 )
